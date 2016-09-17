@@ -38,8 +38,6 @@ body {
 img {
     border: none;
     display: block;
-    /* Fix for image scaling problem in IE: http://joelonsoftware.com/items/2008/12/22.html
-    -ms-interpolation-mode: bicubic; */
 }
 
 ul {
@@ -90,39 +88,19 @@ p {
     margin-bottom: 15px;
 }
 
-.content_holder {
-    width: 1120px;
-}
-
-a.none {
-    color: white;
-}
-
 .wrap_column {
     margin: 18px 10px 0 47px;
 }
 
-span.bold {
-    font-weight: bold;
-}
-
 .info {
-    background-color: #262626;
-    background-image: url("../images/icon_alert.png");
-    background-position: 10px center;
-    background-repeat: no-repeat;
+    background: #262626 url("../images/icon_alert.png") no-repeat 10px center;
     border: 2px solid #A7A5A6;
     color: #A7A5A6;
     font-size: 13px;
     letter-spacing: 0.05em;
-    margin: 20px auto 0;
+    margin: 20px auto 20px auto;
     padding: 10px 0 10px 45px;
-    width: 440px;
-}
-
-strong {
-    background-color: #FFF6BF;
-    font-weight: normal;
+    max-width: 440px;
 }
 
 .content {
@@ -131,10 +109,6 @@ strong {
     border: 2px solid #BDBBBC;
 
     padding-bottom: 15px;
-    -webkit-border-bottom-right-radius: 20px;
-    -webkit-border-bottom-left-radius: 20px;
-    -moz-border-radius-bottomright: 20px;
-    -moz-border-radius-bottomleft: 20px;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
 }
@@ -158,7 +132,6 @@ strong {
 
 p, #big_column p {
     padding: 0 0 3px 0;
-
     text-align: justify;
 }
 
@@ -199,7 +172,7 @@ h3 {
 }
 
 .inline-photo img {
-    margin: 30px 0px;
+    margin: 30px 0;
     border: 1px solid #666666;
     padding: 4px;
     display: inline;
@@ -234,7 +207,7 @@ img.no-border {
 }
 
 #photo-frame {
-    margin: 30px 0px 0px 30px;
+    margin: 30px 0 0 30px;
 }
 
 .banner {
@@ -242,7 +215,7 @@ img.no-border {
     padding: 5px 20px;
     font-size: 24px;
     border: 2px solid #A7A5A6;
-    text-shadow: 1px 1px 0px #e5e5ee;
+    text-shadow: 1px 1px 0 #e5e5ee;
     font-variant: small-caps;
     border-radius: 15px;
     letter-spacing: 2px;

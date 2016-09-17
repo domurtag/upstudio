@@ -2,15 +2,14 @@
 <html>
 
 <head>
-    <!-- make IE8 render in compatibility mode, because the JS doesn't work properly in standards mode  -->
-    <meta http-equiv="X-UA-Compatible" content="IE=7"/>
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
     <link type="text/css" rel="stylesheet" href="css/all.css"/>
     <title>The Upholstery Studio</title>
     <link rel="shortcut icon" href="images/favicon.ico"/>
-    <script src="./js/jquery.min.js" type="text/javascript"></script>
-    <script src="./js/jquery.infinitecarousel3.min.js" type="text/javascript"></script>
-    <script src="./js/easing.js" type="text/javascript"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js" type="text/javascript"></script>
+
+    <script src="js/jquery.infinitecarousel3.min.js" type="text/javascript"></script>
+    <script src="js/easing.js" type="text/javascript"></script>
 
     <style type="text/css">
         .right_column {
@@ -80,42 +79,39 @@
         <area shape="rect" coords="984,316,1120,357" href="faq.html"/>
     </map>
 
-    <div class="content_holder">
+    <div class="content">
+        <!-- right_column -->
+        <div class="right_column" style="margin-bottom: 20px">
+            <ul id="carousel">
+                <li><img src="photos/slide-show/chairs-3.jpg" width="403" height="302"/></li>
+                <li><img src="photos/slide-show/italian.jpg" width="403" height="302"/></li>
+                <li><img src="photos/slide-show/ss3.jpg" width="403" height="302"/></li>
+                <li><img src="photos/slide-show/ss4.jpg" width="403" height="302"/></li>
+                <li><img src="photos/slide-show/ss5.jpg" width="403" height="302"/></li>
+                <li><img src="photos/slide-show/ss6.jpg" width="403" height="302"/></li>
+            </ul>
+        </div>
 
-        <div class="content">
-            <!-- right_column -->
-            <div class="right_column" style="margin-bottom: 20px">
-                <ul id="carousel">
-                    <li><img src="photos/slide-show/chairs-3.jpg" width="403" height="302"/></li>
-                    <li><img src="photos/slide-show/italian.jpg" width="403" height="302"/></li>
-                    <li><img src="photos/slide-show/ss3.jpg" width="403" height="302"/></li>
-                    <li><img src="photos/slide-show/ss4.jpg" width="403" height="302"/></li>
-                    <li><img src="photos/slide-show/ss5.jpg" width="403" height="302"/></li>
-                    <li><img src="photos/slide-show/ss6.jpg" width="403" height="302"/></li>
-                </ul>
+        <div class="left_column">
+            <div id="left_column">
+                <p>The Upholstery Studio offers a full upholstery service to revive, reinvigorate and reinvent your
+                    furniture.</p>
+                <p>We are a family business, run by Detlef and Stefan Schulmeistrat. We specialise in repairing,
+                    recovering and reupholstering all types of furniture. We are based in Co Wicklow and service
+                    Wicklow, Dublin and all surrounding areas.</p>
+                <p>With over 35 years experience providing durable, affordable luxury in Antique, Vintage and
+                    Contemporary styles, we are dedicated to our craft and to our customers. Using traditional
+                    techniques and materials of the highest quality, our aim is to ensure that your project, however
+                    big or small, is completed to your satisfaction, within your budget and in your timescale.</p>
+                <p>For more information or to arrange a free no-obligation estimate please contact us either by
+                    e-mail or telephone.</p>
             </div>
 
-            <div class="left_column">
-                <div id="left_column">
-                    <p>The Upholstery Studio offers a full upholstery service to revive, reinvigorate and reinvent your
-                        furniture.</p>
-                    <p>We are a family business, run by Detlef and Stefan Schulmeistrat. We specialise in repairing,
-                        recovering and reupholstering all types of furniture. We are based in Co Wicklow and service
-                        Wicklow, Dublin and all surrounding areas.</p>
-                    <p>With over 35 years experience providing durable, affordable luxury in Antique, Vintage and
-                        Contemporary styles, we are dedicated to our craft and to our customers. Using traditional
-                        techniques and materials of the highest quality, our aim is to ensure that your project, however
-                        big or small, is completed to your satisfaction, within your budget and in your timescale.</p>
-                    <p>For more information or to arrange a free no-obligation estimate please contact us either by
-                        e-mail or telephone.</p>
-                </div>
-
-            </div>
-            <div class="contact_box">
-                <span>Telephone: </span>087-2562153 | 01-2876730
-                <span style="padding-right: 100px"></span>
-                <span>E-Mail: </span><a href="mailto:theupstudio@gmail.com">theupstudio@gmail.com</a>
-            </div>
+        </div>
+        <div class="contact_box">
+            <span>Telephone: </span>087-2562153 | 01-2876730
+            <span style="padding-right: 100px"></span>
+            <span>E-Mail: </span><a href="mailto:theupstudio@gmail.com">theupstudio@gmail.com</a>
         </div>
     </div>
 </div>
