@@ -1,115 +1,124 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
-    <head>
-    	<!-- make IE8 render in compatibility mode, because the JS doesn't work properly in standards mode  -->
-    	<meta http-equiv="X-UA-Compatible" content="IE=7" />
-    	<meta http-equiv="content-type" content="text/html; charset=utf-8" />               
-        <link type="text/css" rel="stylesheet" href="all.css"/>
-        <title>The Upholstery Studio</title>
-		<link rel="shortcut icon" href="images/favicon.ico"/>   
-       	<script src="./js/jquery.min.js" type="text/javascript"></script>    
-		<script src="./js/jquery.infinitecarousel3.min.js" type="text/javascript"></script>
-		<script src="./js/easing.js" type="text/javascript"></script>
+<head>
+    <!-- make IE8 render in compatibility mode, because the JS doesn't work properly in standards mode  -->
+    <meta http-equiv="X-UA-Compatible" content="IE=7"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <link type="text/css" rel="stylesheet" href="all.css"/>
+    <title>The Upholstery Studio</title>
+    <link rel="shortcut icon" href="images/favicon.ico"/>
+    <script src="./js/jquery.min.js" type="text/javascript"></script>
+    <script src="./js/jquery.infinitecarousel3.min.js" type="text/javascript"></script>
+    <script src="./js/easing.js" type="text/javascript"></script>
 
-		<style type="text/css">
-			.right_column { width: 460px }
-					   
-		    .infiniteCarousel {		  
-		        margin-bottom: 10px;
-		    }			
-			
-		    .ic_button {
-		        background: none repeat scroll 0 0 #DDD;
-		        border: 2px solid #A7A5A6;
-		        float: left;
-		        height: auto;
-		        line-height: 25px;
-		        margin: 0 4px 0 2px;
-		        width: 57px;
-		    }			       
-		
-		    .ic_active {
-		        background: #FFF;
-		        border: 2px solid #F99E1C;
-		    }
-			
-			.ic_thumbnail_tray {
-				margin-left: 2px;
-			}
-		</style>
-				
-		<!--  initialize the slideshow when the DOM is ready -->
-		<script type="text/javascript">
-	
-        $(function() {
+    <style type="text/css">
+        .right_column {
+            width: 460px
+        }
+
+        .infiniteCarousel {
+            margin-bottom: 10px;
+        }
+
+        .ic_button {
+            background: none repeat scroll 0 0 #DDD;
+            border: 2px solid #A7A5A6;
+            float: left;
+            height: auto;
+            line-height: 25px;
+            margin: 0 4px 0 2px;
+            width: 57px;
+        }
+
+        .ic_active {
+            background: #FFF;
+            border: 2px solid #F99E1C;
+        }
+
+        .ic_thumbnail_tray {
+            margin-left: 2px;
+        }
+    </style>
+
+    <!--  initialize the slideshow when the DOM is ready -->
+    <script type="text/javascript">
+
+        $(function () {
             $('#carousel').infiniteCarousel({
                 imagePath: "images/carousel/",
                 autoPilot: true,
-		        prevNextInternal: true,
-		        progressRingColorOpacity: '0,0,0,.9',
-		        progressRingBackgroundOn: false,
-		        internalThumbnails: false,
-		        thumbnailType: 'images',
-		        displayTime: 3000,
-		        easeLeft: 'easeOutExpo',
-				easeRight: 'easeOutQuad',
-				transitionSpeed: 800
-				
+                prevNextInternal: true,
+                progressRingColorOpacity: '0,0,0,.9',
+                progressRingBackgroundOn: false,
+                internalThumbnails: false,
+                thumbnailType: 'images',
+                displayTime: 3000,
+                easeLeft: 'easeOutExpo',
+                easeRight: 'easeOutQuad',
+                transitionSpeed: 800
+
             });
         });
-    		
-		</script>	
-    </head>
-    <body>    	
-    	<div id="logo">
-    		<img src="images/sidebar.jpg" alt="logo" />
-    	</div>    		
-        <div class="main">
-            <img src="images/banner.jpg" usemap="#menu"/>
-            
-            <map name="menu">
-  				<area shape="rect" coords="146,316,281,357" href="index.html"/>
-  				<area shape="rect" coords="283,316,418,357" href="service.html"/>
-  				<area shape="rect" coords="420,316,557,357" href="headboards.html"/>
-  				<area shape="rect" coords="559,316,696,357" href="fitting.html"/>
-  				<area shape="rect" coords="699,316,838,357" href="gallery.html"/>
-  				<area shape="rect" coords="840,316,982,357" href="beforeafter.html"/>
-  				<area shape="rect" coords="984,316,1120,357" href="faq.html"/>
-			</map>
-            
-            <div class="content_holder">
 
-                <div class="content">
-                    <!-- right_column -->
-                    <div class="right_column" style="margin-bottom: 20px">                        
-						<ul id="carousel">
-							<li><img src="photos/slide-show/chairs-3.jpg" width="403" height="302"/></li>
-							<li><img src="photos/slide-show/italian.jpg" width="403" height="302"/></li>
-							<li><img src="photos/slide-show/ss3.jpg" width="403" height="302"/></li>
-							<li><img src="photos/slide-show/ss4.jpg" width="403" height="302"/></li>
-							<li><img src="photos/slide-show/ss5.jpg" width="403" height="302"/></li>
-							<li><img src="photos/slide-show/ss6.jpg" width="403" height="302"/></li>
-						</ul>						
-					</div>                                          
+    </script>
+</head>
+<body>
+<div id="logo">
+    <img src="images/sidebar.jpg" alt="logo"/>
+</div>
+<div class="main">
+    <img src="images/banner.jpg" usemap="#menu"/>
 
-                    <div class="left_column">
-                        <div id="left_column">
-							<p>The Upholstery Studio offers a full upholstery service to revive, reinvigorate and reinvent your furniture.</p>
-							<p>We are a family business, run by Detlef and Stefan Schulmeistrat. We specialise in repairing, recovering and reupholstering all types of furniture. We are based in Co Wicklow and service Wicklow, Dublin and all surrounding areas.</p> 
-							<p>With over 35 years experience providing durable, affordable luxury in Antique, Vintage and Contemporary styles, we are dedicated to our craft and to our customers. Using traditional techniques and materials of the highest quality, our aim is to ensure that your project, however big or small, is completed to your satisfaction, within your budget and in your timescale.</p>
-							<p>For more information or to arrange a free no-obligation estimate please contact us either by e-mail or telephone.</p>
-                        </div>
-                        
-                    </div>
-					<div class="contact_box">
-						<span>Telephone: </span>087-2562153 | 01-2876730
-						<span style="padding-right: 100px"></span>
-						<span>E-Mail: </span><a href="mailto:theupstudio@gmail.com">theupstudio@gmail.com</a>
-					</div>                            													
+    <map name="menu">
+        <area shape="rect" coords="146,316,281,357" href="index.html"/>
+        <area shape="rect" coords="283,316,418,357" href="service.html"/>
+        <area shape="rect" coords="420,316,557,357" href="headboards.html"/>
+        <area shape="rect" coords="559,316,696,357" href="fitting.html"/>
+        <area shape="rect" coords="699,316,838,357" href="gallery.html"/>
+        <area shape="rect" coords="840,316,982,357" href="beforeafter.html"/>
+        <area shape="rect" coords="984,316,1120,357" href="faq.html"/>
+    </map>
+
+    <div class="content_holder">
+
+        <div class="content">
+            <!-- right_column -->
+            <div class="right_column" style="margin-bottom: 20px">
+                <ul id="carousel">
+                    <li><img src="photos/slide-show/chairs-3.jpg" width="403" height="302"/></li>
+                    <li><img src="photos/slide-show/italian.jpg" width="403" height="302"/></li>
+                    <li><img src="photos/slide-show/ss3.jpg" width="403" height="302"/></li>
+                    <li><img src="photos/slide-show/ss4.jpg" width="403" height="302"/></li>
+                    <li><img src="photos/slide-show/ss5.jpg" width="403" height="302"/></li>
+                    <li><img src="photos/slide-show/ss6.jpg" width="403" height="302"/></li>
+                </ul>
+            </div>
+
+            <div class="left_column">
+                <div id="left_column">
+                    <p>The Upholstery Studio offers a full upholstery service to revive, reinvigorate and reinvent your
+                        furniture.</p>
+                    <p>We are a family business, run by Detlef and Stefan Schulmeistrat. We specialise in repairing,
+                        recovering and reupholstering all types of furniture. We are based in Co Wicklow and service
+                        Wicklow, Dublin and all surrounding areas.</p>
+                    <p>With over 35 years experience providing durable, affordable luxury in Antique, Vintage and
+                        Contemporary styles, we are dedicated to our craft and to our customers. Using traditional
+                        techniques and materials of the highest quality, our aim is to ensure that your project, however
+                        big or small, is completed to your satisfaction, within your budget and in your timescale.</p>
+                    <p>For more information or to arrange a free no-obligation estimate please contact us either by
+                        e-mail or telephone.</p>
                 </div>
+
+            </div>
+            <div class="contact_box">
+                <span>Telephone: </span>087-2562153 | 01-2876730
+                <span style="padding-right: 100px"></span>
+                <span>E-Mail: </span><a href="mailto:theupstudio@gmail.com">theupstudio@gmail.com</a>
             </div>
         </div>
-    </body>   
+    </div>
+</div>
+</body>
 </html>
