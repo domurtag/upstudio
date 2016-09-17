@@ -28,6 +28,10 @@ div#logo {
     font-weight: bold;
 }
 
+.contact_box span:nth-child(2) {
+    padding-left: 100px;
+}
+
 body {
     margin: 0;
     font-family: "Trebuchet MS", Arial, sans-serif;
