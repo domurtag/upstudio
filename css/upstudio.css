@@ -78,6 +78,7 @@ body {
 @media(max-width:767px) {
     body {
         margin-bottom: 65px;
+        padding-top: 50px;
     }
 
     .footer {
