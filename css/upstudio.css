@@ -75,6 +75,7 @@ body {
     background-color: #f5f5f5;
 }
 
+/* media queries for footer */
 @media(max-width:767px) {
     body {
         margin-bottom: 65px;
@@ -87,5 +88,19 @@ body {
 
     .contact-point {
         display: block;
+    }
+}
+
+/* media queries for homepage carousel */
+@media(min-width:400px) and (max-width: 767px) {
+    #carousel-example-generic {
+        width: 55%;
+        margin: 0 auto;
+    }
+}
+
+@media(max-width: 399px) {
+    #carousel-example-generic {
+        width: 100%;
     }
 }
