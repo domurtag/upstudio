@@ -11,6 +11,9 @@
 
 body {
     background: url(../images/gradient.jpg) repeat-x scroll 0 0 #262626;
+    padding-top: 70px;
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    font-size: 16px;
 }
 
 #logo {
@@ -38,16 +41,15 @@ body {
     padding-left: 20px;
 }
 
-.container.main {
+.main {
     background: url(../images/noise.png) white;
     border: 2px solid #BDBBBC;
     padding-top: 15px;
 }
 
-body {
-    padding-top: 70px;
+.main .row {
+    padding-top: 15px;
 }
-
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
