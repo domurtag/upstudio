@@ -1,0 +1,43 @@
+
+/*http://stackoverflow.com/a/22211990/2648*/
+.jumbo{
+    background-image: url('../images/banner.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 0;
+    padding-top: 31.96%; /* (img-height / img-width * container-width) */
+}
+
+body {
+    background: url(../images/gradient.jpg) repeat-x scroll 0 0 #262626;
+}
+
+#logo {
+    overflow: auto;
+    position: fixed;
+    right: 0;
+    bottom: 100px;
+    z-index: -1;
+}
+
+.footer {
+    padding-top: 10px;
+    font-size: 18px;
+}
+
+.footer a {
+    color: inherit;
+}
+
+.footer .contact-point span {
+    font-weight: bold;
+}
+
+.footer .contact-point:nth-child(2) {
+    padding-left: 20px;
+}
+
+.footer .glyphicon {
+    font-size: 150%;
+}
