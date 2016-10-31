@@ -17,6 +17,14 @@ body {
     font-size: 16px;
 }
 
+.info {
+    background-color: #262626;
+    border: 2px solid #A7A5A6;
+    color: #A7A5A6;
+    margin: 0 auto;
+    padding: 10px;
+}
+
 #logo {
     overflow: auto;
     position: fixed;
