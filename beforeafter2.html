@@ -12,14 +12,15 @@
     <link rel="icon" href="images/favicon.ico">
 
     <!-- Bootstrap core CSS -->
-    <link href="./bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap/bootstrap.min.css" rel="stylesheet">
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="./bootstrap/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <link href="bootstrap/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="./bootstrap/navbar-footer.css" rel="stylesheet">
-    <link href="./css/upstudio.css" rel="stylesheet">
+    <link href="bootstrap/navbar-footer.css" rel="stylesheet">
+    <link href="css/upstudio.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css"rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -55,9 +56,9 @@
                 <li><a href="index2.html">Home</a></li>
                 <li><a href="service2.html">Services</a></li>
                 <li><a href="headboards2.html">Headboards</a></li>
-                <li class="active"><a href="fitting2.html">Fitting</a></li>
+                <li><a href="fitting2.html">Fitting</a></li>
                 <li><a href="gallery2.html">Gallery</a></li>
-                <li><a href="beforeafter2.html">Before / After</a></li>
+                <li class="active"><a href="beforeafter2.html">Before / After</a></li>
                 <li><a href="faq2.html">FAQ</a></li>
             </ul>
         </div>
@@ -68,32 +69,49 @@
     <div class="jumbo"></div>
 
     <div class="row">
-        <div class="col-xs-3">
-            <img class="center-block img-responsive photo" src="images/fitting/dining-room2.jpg"/>
+        <div class="col-lg-offset-3 col-lg-6">
+            <div class="info">
+                <span class="glyphicon glyphicon-info-sign"></span> To display higher quality images click on the thumbnails below.
+            </div>
         </div>
-        <div class="col-xs-3">
-            <img class="center-block img-responsive photo" src="images/fitting/blue.jpg"/>
+    </div>
+
+    <div class="row gallery">
+        <div class="col-md-3 col-xs-6">
+            <a href="photos/before-after/slides/armchair.jpg" rel="prettyPhoto[gallery]">
+                <img class="img-responsive photo" src="photos/before-after/thumbs/armchair.jpg"/>
+            </a>
         </div>
-        <div class="col-xs-3">
-            <img class="center-block img-responsive photo" src="images/fitting/red.jpg"/>
+        <div class="col-md-3 col-xs-6">
+            <a href="photos/before-after/slides/seat.jpg" rel="prettyPhoto[gallery]">
+                <img class="img-responsive photo" src="photos/before-after/thumbs/seat.jpg"/>
+            </a>
         </div>
-        <div class="col-xs-3">
-            <img class="center-block img-responsive photo" src="images/fitting/drawing-room2.jpg"/>
+        <div class="col-md-3 col-xs-6">
+            <a href="photos/before-after/slides/chair.jpg" rel="prettyPhoto[gallery]">
+                <img class="img-responsive photo" src="photos/before-after/thumbs/chair.jpg"/>
+            </a>
+        </div>
+        <div class="col-md-3 col-xs-6">
+            <a href="photos/before-after/slides/chair2.jpg" rel="prettyPhoto[gallery]">
+                <img class="img-responsive photo" src="photos/before-after/thumbs/chair2.jpg"/>
+            </a>
         </div>
 
-    </div>
-    <h2 class="banner">Fitting</h2>
-    <div class="row">
-        <div class="col-sm-4">
-            <p>
-                We offer a full soft furnishing fitting service. We have fitted curtains, blinds, pelmets, and
-                upholstered walling with some of Ireland's foremost designers, in some of the country’s most elegant and
-                stately homes. We can measure precisely for tracks, poles, curtains and blinds and we also manufacture
-                and upholster pelmets.
-            </p>
+        <div class="col-md-4 col-xs-6">
+            <a href="photos/before-after/slides/bench.jpg" rel="prettyPhoto[gallery]">
+                <img class="img-responsive photo" src="photos/before-after/thumbs/bench.jpg"/>
+            </a>
         </div>
-        <div class="col-sm-8">
-            <img class="center-block img-responsive photo" src="images/fitting/windows.jpg"/>
+        <div class="col-md-4 col-xs-6">
+            <a href="photos/before-after/slides/sofas.jpg" rel="prettyPhoto[gallery]">
+                <img class="img-responsive photo" src="photos/before-after/thumbs/sofas.jpg"/>
+            </a>
+        </div>
+        <div class="col-md-4 col-xs-6">
+            <a href="photos/before-after/slides/tub-chair.jpg" rel="prettyPhoto[gallery]">
+                <img class="img-responsive photo" src="photos/before-after/thumbs/tub-chair.jpg"/>
+            </a>
         </div>
     </div>
 </div>
@@ -113,10 +131,23 @@
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
-<script src="./bootstrap/jquery.min.js"></script>
+<script src="bootstrap/jquery.min.js"></script>
 
-<script src="./bootstrap/bootstrap.min.js"></script>
+<script src="bootstrap/bootstrap.min.js"></script>
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-<script src="./bootstrap/ie10-viewport-bug-workaround.js"></script>
+<script src="bootstrap/ie10-viewport-bug-workaround.js"></script>
+
+<script src="js/jquery.prettyPhoto.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        $(".container a[rel^='prettyPhoto']").prettyPhoto({
+            theme: 'pp_default', /* light_rounded / dark_rounded / light_square / dark_square / facebook */
+            overlay_gallery: false,
+            social_tools: null
+        });
+    });
+</script>
 </body>
 </html>

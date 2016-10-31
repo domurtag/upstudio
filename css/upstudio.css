@@ -25,6 +25,10 @@ body {
     padding: 10px;
 }
 
+.gallery > div {
+    margin-bottom: 30px;
+}
+
 #logo {
     overflow: auto;
     position: fixed;
